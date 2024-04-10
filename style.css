@@ -1,0 +1,421 @@
+@import url('https://fonts.cdnfonts.com/css/impact');
+@import url('https://fonts.cdnfonts.com/css/roboto');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.mobile{
+    max-width: 500px;
+    margin: auto;
+    display: block;
+}
+.header{
+    overflow: hidden;
+    position: relative;
+    min-height: 100vh;
+    background: rgb(0, 36, 33);
+    background: radial-gradient(circle, rgb(237 237 237) 0%, rgb(243 243 243) 49%, rgb(215 215 215) 100%);
+    font-family: roboto;    
+}
+
+
+.header .text{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    top: 25%;
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 980;
+}
+.header .btn{
+    margin-top: 20px;
+    background-color: #009289;
+    border: none;
+}
+.text p{
+    font-weight: 900;
+    font-size: 24px;
+    max-width: 300px;
+    text-align: center;
+    margin: auto;
+}
+.text img{
+    max-width: 100%;
+}
+.navbar{
+    background: black!important;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    z-index: 999;
+}
+.navbar img{
+    max-width: 50%;
+}
+
+.stars img{
+    position: absolute;
+    z-index: 0;
+}
+.stars img:nth-child(1){
+    left: 50px;
+    bottom: 300px;
+    transform: scale(0.5);
+    filter: blur(3px);
+}
+
+.stars img:nth-child(2){
+    right: 50px;
+    bottom: 400px;
+    transform: scale(0.7);
+    filter: blur(2px);
+}
+.stars img:nth-child(3){
+    right: -30px;
+    bottom: 0px;
+    transform: scale(1);
+    filter: blur(3px);
+}
+.stars img:nth-child(4){
+    left: 0px;
+    bottom: 200px;
+    transform: scale(0.4);
+    filter: blur(7px);
+}
+.stars img:nth-child(5){
+    left: 50px;
+    top: 100px;
+    transform: scale(0.4);
+    filter: blur(5px);
+}
+.models img{
+    max-width: 100%;
+    transform-origin: bottom center;
+    display: block;
+}
+.models{
+    position: absolute;
+    bottom: 0px;
+    z-index: 0;
+}
+
+.showup-animation {
+    animation-name: showup;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    pointer-events: none;
+}
+
+@keyframes showup {
+    0%{
+        transform: rotate(-90deg) scale(1.3);
+        opacity: 0;
+    }
+    10%{
+        transform: rotate(0deg)  scale(1.3);
+        opacity: 1;
+    }
+    50%{
+        transform: rotate(0deg)  scale(1.3);
+    }
+    90%{
+        transform: rotate(0deg) scale(1.3);
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(90deg) scale(1.3);
+        opacity: 0;
+    }
+}
+.info img{
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+.info{
+    text-align: center;
+}
+
+.info-2{
+    text-align: center;
+    margin-top: 30px;
+}
+.info-2 img{
+    max-width: 100%;
+}
+.call-to-action{
+    margin-top:50px;
+    background-color: #009289;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 20px 34px -29px rgba(0,0,0,0.75);
+}
+.call-to-action a{
+font-size: 18px;
+text-align: center;
+color: rgb(245, 244, 244);
+text-decoration: none;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+footer{
+    background-color: #f0f0f0!important;
+    margin-top: 40px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.website{
+    font-size: 9px;
+    color: gray;
+}
+
+
+
+/* PRODUCTS */
+.products-title{
+    color: #009289;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+}
+.products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.single-product{
+    margin-top: 20px;
+    max-width: 90%;
+    background: rgb(228, 228, 228);
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+}
+.single-product img{
+    max-width: 100%;
+}
+tbody th{
+    font-weight: lighter;
+}
+.single-product .btn{
+    background: #009289!important;
+    width: 100%;
+}
+
+
+/*SINGLE PRODUCT*/
+.single-product-header img{
+    max-width: 100%;
+    margin: auto;
+    display: block;
+}
+.single-product-info{
+    text-align: center;
+}
+.highlight{
+    color: #009289;
+}
+
+.single-product-feature img{
+    max-width: 100%;
+}
+.single-product-feature h2{
+    font-size: 30px;
+}
+.single-product-feature img{
+    margin: auto;
+    display: block;
+}
+.single-product-feature p{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-weight: 500;
+    font-size: 22px;
+}
+.single-product-feature{
+    max-width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 30px;
+}
+.lightblue{
+    background: #D5E0E4;
+}
+.darkblue{
+    background: #BAD8E3;
+    text-align: center;
+}
+.how-it-works img{
+    max-width: 100%;
+}
+.how-it-works{
+    text-align: center;
+    margin-top: 70px;
+}
+.how-it-works h1{
+    font-size: 42px;
+    font-weight: 400;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.form{
+    margin-top: 50px!important;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    background: #D5E0E4;
+    max-width: 90%;
+    margin: auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.form h2{
+    text-align: center;
+    font-size: 42px;
+}
+.form button{
+    width: 100%;
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    color: #009289;
+    padding: 5px 10px;
+}
+.form-outline{
+    margin-top: 30px!important;
+}
+.form-outline label{
+    color: black;
+    font-weight: 400!important;
+}
+.info-2 img{
+    max-width: 100%;
+}
+.info-2{
+    text-align: center;
+}
+.info-2 span{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 26px;
+    margin-bottom: 30px;
+    display: block;
+}
+.info-2 p{
+    font-size: 20px;
+}
+.video{
+    background: hsl(0, 0%, 94%);
+}
+.video iframe{
+    width: 100%;
+    height: 200px;
+}
+
+.video p{
+    font-weight: lighter!important;
+    font-size: 15px!important;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+
+/* ABOUT US */
+
+.about-us{
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+    padding: 10px;
+    
+}
+.about-us .title{
+    font-size: 32px;
+    text-align: left;
+    font-weight: 600;
+}
+.about-us span{
+    color: #009289;
+    border-bottom: 1px solid #009289;
+}
+
+
+.about-us-2{
+ background: #f7f7f7;
+ margin: 10px;
+ padding: 5px;
+ box-sizing: border-box;
+ border-radius: 5px;
+ font-family: 'Roboto Condensed', sans-serif;
+
+}
+.about-us-2 h4{
+    margin-left: 5px;
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+}
+.about-us-2 ul {
+    list-style: none;
+  }
+.about-us-2  ul li{
+    margin-left: -20px;
+    font-size: 16px!important;
+    margin-bottom: 10px;
+  }
+.about-us-2 ul li:before {
+    content: '✓ ';
+  }
+
+.about-us-3{
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.about-us-3 img{
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+
+/* CONTACT */
+.contact{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.send-contact-form{
+    width: 100%;
+    background: #009289;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+}
+.form-group{
+    margin-bottom:15px ;
+}
+
+.contact-info a{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 200;
+    stroke: 0.5px solid black;
+    font-size: 12px;
+    display: block;
+}
+.contact-info{
+    margin-top: 30px;
+}
